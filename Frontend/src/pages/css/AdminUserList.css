@@ -1,0 +1,123 @@
+/* New Table Styles */
+
+.table-container {
+  margin: 10px 70px 70px;
+  box-shadow: 0px 35px 50px rgba(0, 0, 0, 0.2);
+}
+
+.user-table {
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: normal;
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  white-space: nowrap;
+  background-color: white;
+}
+
+.user-table td, .user-table th {
+  text-align: center;
+  padding: 8px;
+  border-right: 1px solid #f8f8f8; /* subtle border for cells */
+}
+
+.user-table thead th {
+  color: #ffffff;
+  background: #4FC3A1; /* Green background for headers */
+}
+
+/* You can add more specific color modifications as needed, such as alternating header colors, etc. */
+
+.user-table tbody tr:nth-child(even) {
+  background: #F8F8F8; /* Zebra striping for rows */
+}
+
+.user-table thead {
+  color: #ffffff;
+  background: #324960; /* Darker background for header */
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .user-table {
+    display: block;
+    width: 100%;
+  }
+  .table-container:before {
+    content: "Scroll horizontally >";
+    display: block;
+    text-align: right;
+    font-size: 11px;
+    color: white;
+    padding: 0 0 10px;
+  }
+  .user-table thead, .user-table tbody, .user-table thead th {
+    display: block;
+  }
+  .user-table thead th:last-child {
+    border-bottom: none;
+  }
+  .user-table thead {
+    float: left;
+  }
+  .user-table tbody {
+    width: auto;
+    position: relative;
+    overflow-x: auto;
+  }
+  .user-table td, .user-table th {
+    padding: 20px .625em .625em .625em;
+    height: 60px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 120px;
+    font-size: 13px;
+    text-overflow: ellipsis;
+  }
+  .user-table thead th {
+    text-align: left;
+    border-bottom: 1px solid #f7f7f9;
+  }
+  .user-table tbody tr {
+    display: table-cell;
+  }
+  .user-table tr:nth-child(even) {
+    background: transparent;
+  }
+  .user-table tr td:nth-child(odd) {
+    background: #F8F8F8;
+    border-right: 1px solid #E6E4E4;
+  }
+  .user-table tr td:nth-child(even) {
+    border-right: 1px solid #E6E4E4;
+  }
+  .user-table tbody td {
+    display: block;
+    text-align: center;
+  }
+}
+.search-create-container .search-input {
+ 
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+  
+
+
+.search-create-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin: 20px auto; /* Centers the container itself horizontally */
+  width: 50%; /* or 100% depending on desired effect */
+}
+
+

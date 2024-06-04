@@ -1,0 +1,68 @@
+.home-container {
+  text-align: center;
+}
+
+
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.feature {
+  margin: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  color: white;
+  background-color: #0056b3;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #003580;
+}
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.hero-section {
+  position: relative;
+  color: white;
+  text-align: center;
+ 
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text contrast */
+  padding: 50px;
+}
+
+.btn-primary {
+  background-color: #f04; /* Your primary action color */
+  padding: 10px 30px;
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #faa; /* Lighten on hover for interactivity */
+}
+
+.btn-secondary {
+  background-color: #555; /* Secondary or complementary color */
+}
+
+/* Add styles for your footer, navigation bar, etc. */

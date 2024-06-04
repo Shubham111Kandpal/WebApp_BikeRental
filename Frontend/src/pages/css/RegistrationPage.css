@@ -1,0 +1,91 @@
+/* RegistrationFormStyles.css */
+.registration-form-container {
+  display: flex;
+  flex-direction: column; /* Stacks flex items vertically */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+}
+.registration-form {
+ 
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ width: 300px; /* Max width of the form */
+}
+
+.form-group {
+  margin-bottom: 20px; /* Space between form groups */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px; /* Space between label and input */
+}
+
+.form-group input {
+  width: 100%; /* Full width of the form group */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #eeeff4;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #0056b3; /* Blue border for focus */
+  background-color: #e8e8e8; /* Slightly darker background on focus */
+}
+
+.button {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+  width: 100%;              /* Ensures the input takes the full width of its parent */
+  padding: 10px;            /* Provides padding inside the input for better readability */
+  border: 1px solid #ccc;   /* Sets a uniform, subtle border color */
+  border-radius: 4px;       /* Gives the inputs a rounded corner for a modern look */
+  background-color: #eeeff4;/* Sets a light background color that is easy on the eyes */
+  box-sizing: border-box;   /* Includes padding and border in the element's total width and height */
+
+  /* Additional Styles for Focus and Interaction */
+  outline: none;            /* Removes the default focus outline to allow for custom styling */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus {
+  border-color: #0056b3;    /* Changes the border color on focus to indicate active input */
+  background-color: #e8e8e8;/* Darkens the background slightly on focus */
+}
+
+/* Placeholder styling for better visibility and aesthetics */
+::placeholder {
+  color: #999;              /* Lighter text color for placeholders for contrast */
+  opacity: 1;               /* Ensures consistent placeholder opacity across browsers */
+}
+
+/* Style adjustments for better responsiveness on smaller screens */
+@media (max-width: 768px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"] {
+    padding: 8px;            /* Slightly less padding on smaller devices */
+  }
+}

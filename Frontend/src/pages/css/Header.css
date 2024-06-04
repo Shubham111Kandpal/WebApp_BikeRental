@@ -1,0 +1,22 @@
+/* Header.css */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* High z-index to ensure it stays on top of other content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;  
+}
+
+.back-button,
+.logout-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: black;
+}
+
+.header-spacer {
+    flex-grow: 1;
+}

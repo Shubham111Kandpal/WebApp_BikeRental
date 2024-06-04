@@ -1,0 +1,9 @@
+version: '3'
+services: 
+
+ # Frontend service
+  build:
+    build: ./build
+    ports:
+      - "${8080}:8080"
+

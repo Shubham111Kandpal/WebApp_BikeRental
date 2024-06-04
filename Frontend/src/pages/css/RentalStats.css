@@ -1,0 +1,11 @@
+.charts-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.charts-container div {
+    width: 45%; /* Adjust the width as needed to make room for both charts */
+    background-color: rgb(255, 255, 255);
+}

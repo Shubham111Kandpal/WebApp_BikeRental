@@ -1,0 +1,37 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content-modal {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  width: auto;
+  max-width: auto; 
+  height: auto; /* Set a maximum height for the modal content */
+  overflow: auto; /* Enable scrolling for overflow content */
+  box-sizing: border-box;
+  display: flex; /* Add flex display */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+}

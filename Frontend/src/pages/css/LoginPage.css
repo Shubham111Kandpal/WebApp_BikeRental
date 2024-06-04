@@ -1,0 +1,98 @@
+.login-container {
+  background-color: rgba(22, 56, 58, 0.307); 
+  width: 50%; 
+  max-width: 400px; 
+  margin: 0 auto; 
+  padding: 20px; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  text-align: center; 
+  color: #000000;
+
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  .input-focus:focus {
+    outline: none;
+   
+    box-shadow: 0 0 8px #c6bdbd69;
+  }
+  
+  button {
+    width: 100%; 
+    padding: 10px ;
+    background-color: #0056b3; 
+    color: white; 
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+  
+  button:hover {
+    background-color: #003580;
+  }
+  
+  a {
+    color: #0056b3;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    background-color: #887c7c;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    box-sizing: border-box;
+}
+  
+  a {
+    color: #0e2d4f;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  input:focus {
+    outline: none;
+    border: 2px solid #0056b3; 
+    box-shadow: 0 0 8px #666666;
+  }
+
+  .input-full-width {
+    width: 100%; /* Subtract the same amount of padding */
+    padding: 10px; /* Keep padding consistent with the button */
+    margin-bottom: 10px;
+    border: none;
+    box-sizing: border-box; /* Include padding and border in the element's width */
+  }
+  
+  .button-small {
+    width: 305px; /* Let the width be content-based or you can set a specific width */
+    padding: 5px 20px; /* Smaller padding than input fields; adjust as needed */
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: inline-block; /* Aligns to text if width is less than container */
+    margin: 0 auto; /* This will center the button if it has a width set */
+  }

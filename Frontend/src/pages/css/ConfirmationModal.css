@@ -1,0 +1,172 @@
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    height: 80%;
+    max-width: 500px;
+    max-height: 800px;
+    z-index: 1100;
+    max-width: auto; 
+    height: auto; /* Set a maximum height for the modal content */
+    overflow: auto; /* Enable scrolling for overflow content */
+    box-sizing: border-box;
+    display: flow-root; /* Add flex display */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+  
+.loading-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1100;
+}
+
+.loading-content img {
+    width: 100px;
+}
+
+/* ConfirmationModal.css */
+
+/* Shared modal styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Dim the background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  
+  /* Styles specific to ConfirmationModal */
+  .confirmation-modal-content {
+    background-color: #fff; /* White background */
+    margin: 1.25rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    max-width: 500px; /* Maximum width */
+    width: 90%; /* Take up to 90% of the viewport width */
+    position: relative; /* For positioning the close button */
+  }
+  
+  .confirmation-modal-header {
+    margin-bottom: 1.5rem;
+    text-align: right;
+  }
+  
+  .confirmation-details {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .confirmation-button-group {
+    text-align: center; /* Center the buttons */
+    
+  }
+  
+  /* General button styles */
+  .confirmation-modal-button {
+    background-color: #5cae76; /* A pleasant green */
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.75rem 1.5rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    transition: background-color 0.2s; /* Smooth background color transition */
+  }
+  
+  .confirmation-modal-button:hover {
+    background-color: #4a9d67; /* Darken the button color on hover */
+  }
+  
+  .confirmation-modal-close-button {
+    background-color: #f44336; /* A red color for the close button */
+  }
+  
+  .confirmation-modal-close-button:hover {
+    background-color: #d32f2f; /* Darken the red on hover */
+  }
+  
+  /* Loader styles */ 
+  /* Loader styles */
+  .loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .loader {
+    border: 5px solid #f3f3f3; /* Light grey */
+    border-top: 5px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+  }
+  
+  /* The spinning effect */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Additional modal header styling */
+  .confirmation-modal-header h1 {
+    font-size: 1.75rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* Detail text styling */
+  .confirmation-details p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    margin: 0.5rem 0;
+  }
+  
+  .confirmation-details strong {
+    color: #222;
+  }
+  
+  /* Override default button focus outline */
+  .confirmation-modal-button:focus {
+    outline: none;
+  }
+  
+  .error-message {
+    color: red;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #ffcccc; /* Light red background */
+    border: 1px solid red;
+    border-radius: 5px;
+}

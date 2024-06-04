@@ -1,0 +1,105 @@
+.edit-user-container {
+    max-width: 500px;
+    margin: auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+/* Style the header for the edit user form */
+.edit-user-header {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #090909;
+}
+
+/* Form field label styling */
+.edit-user-label {
+    display: block;
+    color: #666;
+    font-weight: bold;
+}
+
+/* Style for checkboxes, possibly smaller */
+.edit-user-checkbox {
+    margin-top: 0.5rem;
+}
+
+/* Button styles */
+.edit-user-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    width: 100px; /* Define a specific width */
+    height: 40px; /* Define a specific height */
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Specific styles for save button */
+.edit-user-save-button {
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Specific styles for cancel button */
+.edit-user-cancel-button {
+    background-color: #d9534f;
+    color: white;
+}
+
+/* Common styles for input fields */
+.edit-user-input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Styles for form sections */
+.edit-user-form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-user-checkbox-container {
+    display: flex;
+    flex-direction: column; /* Stack items */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center the label text */
+}
+
+.edit-user-checkbox-label {
+    margin-left: .5rem; /* Space out label from checkbox */
+}
+
+/* Button container to space out buttons */
+.edit-user-button-container {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    gap: 0.5rem; /* Space between buttons */
+    margin-top: 1rem;
+}
+
+/* Ensure inputs and checkbox take available width from flex container */
+.edit-user-input,
+.edit-user-checkbox {
+    flex-grow: 1;
+}
+
+/* New class for the text below the checkbox */
+.edit-user-checkbox-status {
+    margin-top: 0.5rem; /* Space between checkbox and text */
+}
+
+/* Adjustments for labels (choose the appropriate margin-bottom) */
+.edit-user-label {
+    margin-bottom: 0.25rem; /* Consistent margin for labels */
+}
