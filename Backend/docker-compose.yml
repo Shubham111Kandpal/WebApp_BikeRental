@@ -1,0 +1,68 @@
+version: '3'
+
+services:
+  # MySQL service
+  database_mysql:
+    image: mysql:5.7
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: your_database
+      MYSQL_USER: your_username
+      MYSQL_PASSWORD: your_password
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./sql_files:/docker-entrypoint-initdb.d  # Mount SQL files for initialization
+
+  # Frontend service
+  front_end_client:
+    build: ./front_end_client
+    ports:
+      - "${FRONT_END_PORT}:8000"
+
+  # Microservices definitions...
+  admins_service:
+    build: ./admins_service
+    ports:
+      - "${ADMINS_SERVICE_PORT}:8001"
+    environment:
+      - SERVICE_PORT=${ADMINS_SERVICE_PORT}
+
+  bikes_service:
+    build: ./bikes_service
+    ports:
+      - "${BIKES_SERVICE_PORT}:8002"
+    environment:
+      - SERVICE_PORT=${BIKES_SERVICE_PORT}
+
+  rentals_service:
+    build: ./rentals_service
+    ports:
+      - "${RENTALS_SERVICE_PORT}:8003"
+    environment:
+      - SERVICE_PORT=${RENTALS_SERVICE_PORT}
+
+  reviews_service:
+    build: ./reviews_service
+    ports:
+      - "${REVIEWS_SERVICE_PORT}:8004"
+    environment:
+      - SERVICE_PORT=${REVIEWS_SERVICE_PORT}
+
+  users_service:
+    build: ./users_service
+    ports:
+      - "${USERS_SERVICE_PORT}:8005"
+    environment:
+      - SERVICE_PORT=${USERS_SERVICE_PORT}
+
+  booking_service:
+    build: ./booking_service
+    ports:
+      - "${BOOKING_SERVICE_PORT}:8006"
+    environment:
+      - SERVICE_PORT=${BOOKING_SERVICE_PORT}
+
+volumes:
+  mysql_data:
